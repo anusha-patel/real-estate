@@ -9,7 +9,7 @@ const HorizontalImageCarousel = ({ data }) => {
       {data.map((item) => (
         <div >
           <Box width="100%">
-            <img src={item.url}  />
+            <img src={item.url} key={item.id} alt='display'/>
           </Box>
         </div>
       ))}

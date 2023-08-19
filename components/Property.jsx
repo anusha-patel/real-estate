@@ -9,6 +9,7 @@ import DefaultImage from "../assets/demo.avif"
 
 const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalID } }) => (
     <Link href={`/property/${externalID}`} passHref>
+         
         <Flex flexWrap="wrap" width={400}     p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
             <Box width={500} >
                 <Image src={coverPhoto ? coverPhoto.url : DefaultImage} alt="house" width={500} height={0} sizes="20vh"/>
